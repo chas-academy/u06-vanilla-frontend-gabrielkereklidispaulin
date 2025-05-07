@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melee Character List Creator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Melee Character List Creator</h1>
+
+    <form id="character-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <span id="name-error" class="error-message"></span>
+
+      <label for="tier_ranking">Tier Ranking:</label>
+      <select id="tier_ranking" name="tier_ranking" required>
+        <option value="">Select option</option>
+        <option value="S">S</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+      </select>
+      <span id="tier_ranking-error" class="error-message"></span>
+
+      <label for="weight_class">Weight class:</label>
+      <select id="weight_class" name="weight_class" required>
+        <option value="">Select option</option>
+        <option value="light">Light</option>
+        <option value="medium">Medium</option>
+        <option value="heavy">Heavy</option>
+      </select>
+      <span id="weight_class-error" class="error-message"></span>
+
+      <label for="movement_speed">Movement Speed:</label>
+      <select id="movement_speed" name="movement_speed" required>
+        <option value="">Select option</option>
+        <option value="70">70</option>
+        <option value="60">60</option>
+        <option value="55">55</option>
+        <option value="54">54</option>
+        <option value="50">50</option>
+        <option value="48">48</option>
+        <option value="44">44</option>
+        <option value="42">42</option>
+        <option value="40">40</option>
+
+      </select>
+
+      <label for="original_game_series">Original Game Series:</label>
+      <input type="text" id="original_game_series" name="original_game_series" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <div id="character-list"></div>
+
+    <form id="edit-character-form" style="display:none;">
+      <h3>Update Character</h3>
+      <label for="edit-name">Name:</label>
+      <input type="text" id="edit-name" name="name" required>
+      <span id="edit-name-error" class="error-message"></span>
+      <label for="edit-tier_ranking">Tier ranking:</label>
+      <select id="edit-tier_ranking" name="tier_ranking" required>
+        <option value="S">S</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+      </select>
+      <span id="edit-tier_ranking-error" class="error-message"></span>
+      <label for="edit-weight_class">Weight class:</label>
+      <select id="edit-weight_class" name="weight_class" required>
+        <option value="light">Light</option>
+        <option value="medium">Medium</option>
+        <option value="heavy">Heavy</option>
+      </select>
+      <span id="edit-weight_class-error" class="error-message"></span>
+      <label for="edit-movement_speed">Movement Speed:</label>
+      <select id="edit-movement_speed" name="movement_speed" required>
+      <option value="">Select option</option>
+        <option value="70">70</option>
+        <option value="60">60</option>
+        <option value="55">55</option>
+        <option value="54">54</option>
+        <option value="50">50</option>
+        <option value="48">48</option>
+        <option value="44">44</option>
+        <option value="42">42</option>
+        <option value="40">40</option>
+      </select>
+      <label for="edit-original_game_series">Original Game Series:</label>
+      <input type="text" id="edit-original_game_series" name="original_game_series" required>
+      <button type="submit">Save</button>
+      <button type="button" id="cancel-edit">Cancel</button>
+    </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
