@@ -1,4 +1,5 @@
-const apiBase = "https://u05-restful-api.onrender.com/characters";
+const apiBase = "/api/characters";
+
 const characterList = document.getElementById("character-list");
 const form = document.getElementById("character-form");
 const editForm = document.getElementById("edit-character-form");
